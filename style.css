@@ -8,17 +8,23 @@ body {
     display: grid;
     grid-template-columns: 40% 60%;
     width: 50%;
-    background-color: white;
     position: absolute;
     top: 25%;
 }
+.fix {
+    position: relative;
+    top: 23px;
+}
 main {
     height: 300px;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+}
+.help {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
 }
 .p1 {
     font-size: 21px;
@@ -36,15 +42,110 @@ main {
 img {
     width: 350px;
     height: 300px;
+    border-radius: 15px 0 0 15px;
 }
 .imgs {
+    width: 90%;
     font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .perfil {
     display: flex;
 }
 .perfil img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    bottom: 0;
+}
+.share {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    cursor: pointer;
+}
+.share img {
+    width: 16px;
+    height: 16px;
+}
+.perfil p {
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+}
+.name {
+    color: hsl(217, 19%, 35%);
+}
+.date {
+    position: relative;
+    top: 5px;
+    color: hsl(212, 23%, 69%);
+}
+.s-c {
+    background-color: hsl(217, 19%, 35%);
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: hsl(212, 23%, 69%);
+}
+.press {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5px;
+    left: 85px;
+}
+
+.s-t {
+    position: relative;
+    bottom: 5px;
+    align-self: center;
+    background-color: hsl(217, 19%, 35%);
+    width: 35px;
+    height: 20px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.face {
+    width: 20px;
+    height: 20px;
+    background-image: url('https://raw.githubusercontent.com/CarlosCordovaD/Reto2Platzi/2fa60e5776da5fb689149498b8eda7833de04ceb/images/icon-facebook.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.pin {
+    width: 20px;
+    height: 20px;
+    background-image: url('https://raw.githubusercontent.com/CarlosCordovaD/Reto2Platzi/2fa60e5776da5fb689149498b8eda7833de04ceb/images/icon-pinterest.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.twitte {
+    position: relative;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://raw.githubusercontent.com/CarlosCordovaD/Reto2Platzi/2fa60e5776da5fb689149498b8eda7833de04ceb/images/icon-twitter.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
 }
