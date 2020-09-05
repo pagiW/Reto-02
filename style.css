@@ -149,3 +149,16 @@ img {
     background-size: 100%;
     cursor: pointer;
 }
+@media screen and (max-width: 375px) {
+    .espacio {
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        width: 80%;
+    }
+    img {
+        border-radius: 15px 15px 0 0;
+    }
+    .img {
+        width: 377.5px;
+    }
+}
