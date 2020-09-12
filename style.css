@@ -40,16 +40,19 @@ main {
     height: 300px;
 }
 img {
+    background-image: url('https://github.com/platzi/reto-componente-de-vista-previa-de-articulo/blob/master/images/drawers.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-size: 350px 300px;
     width: 350px;
     height: 300px;
     border-radius: 15px 0 0 15px;
 }
 .imgs {
-    width: 90%;
+    width: 100%;
     font-size: 13px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .perfil {
     display: flex;
@@ -81,6 +84,7 @@ img {
 .share img {
     width: 16px;
     height: 16px;
+    background: none;
 }
 .perfil p {
     position: relative;
@@ -113,7 +117,6 @@ img {
     top: 5px;
     left: 85px;
 }
-
 .s-t {
     position: relative;
     bottom: 5px;
@@ -149,6 +152,27 @@ img {
     background-size: 100%;
     cursor: pointer;
 }
+.font {
+    background-color: hsl(217, 19%, 35%);
+    height: 50px;
+}
+.r {
+    display: flex;
+    align-items: center;
+    color: hsl(212, 23%, 69%);
+}
+.r .face {
+    position: relative;
+    left: 15px;
+}
+.r .twitte {
+    position: relative;
+    left: 40px;
+}
+.r .pin {
+    position: relative;
+    left: 60px;
+}
 @media screen and (max-width: 375px) {
     .espacio {
         grid-template-columns: 100%;
@@ -156,9 +180,11 @@ img {
         width: 80%;
     }
     img {
+        width: 300px;
         border-radius: 15px 15px 0 0;
     }
-    .img {
-        width: 377.5px;
+    main {
+        border-radius: 0 0 15px 15px;
+        height: 350px;
     }
 }
