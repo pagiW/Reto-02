@@ -16,7 +16,9 @@ body {
     top: 23px;
 }
 main {
-    height: 300px;
+    position: relative;
+    min-height: 300px;
+    max-height: 350px;
     background-color: white;
     border-radius: 0 15px 15px 0;
 }
@@ -38,14 +40,12 @@ main {
 }                                                                   
 .img {
     height: 300px;
-}
-img {
-    width: 350px;
-    height: 300px;
     border-radius: 15px 0 0 15px;
+    background-image: url("https://github.com/platzi/reto-componente-de-vista-previa-de-articulo/blob/master/images/drawers.jpg?raw=true");
+    background-size: 350px 300px;
 }
 .imgs {
-    width: 90%;
+    width: 85%;
     font-size: 13px;
     display: flex;
     flex-direction: row;
@@ -65,6 +65,7 @@ img {
     align-items: flex-end;
     position: relative;
     bottom: 0;
+    width: 150px;
 }
 .share {
     position: relative;
@@ -149,16 +150,40 @@ img {
     background-size: 100%;
     cursor: pointer;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     .espacio {
         grid-template-columns: 100%;
         grid-template-rows: 40% 60%;
         width: 80%;
     }
-    img {
-        border-radius: 15px 15px 0 0;
-    }
     .img {
-        width: 377.5px;
+        border-radius: 15px 15px 0 0;
+        width: 300px;
+    }
+    main {
+        border-radius: 0 0 15px 15px;
+    }
+    .perfil {
+        width: 250px;
+    }
+    .press {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .s-c {
+        position: relative;
+        left: -80px;
+        background-color: hsl(217, 19%, 35%);
+        width: 200px;
+        height: 50px;
+        border-radius: 0;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: hsl(212, 23%, 69%);
     }
 }
